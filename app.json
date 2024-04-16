@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/me/me",
+    "pages/tip/tip",
+    "pages/scroll/scroll"
+  ],
+  "window": {
+    "navigationStyle": "custom",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff000",
+    "navigationBarTitleText": "666",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "style": "v2",
+  "renderer": "skyline",
+  "rendererOptions": {
+    "skyline": {
+      "defaultDisplayBlock": true,
+      "defaultContentBox": true,
+      "disableABTest": true,
+      "sdkVersionBegin": "3.0.0",
+      "sdkVersionEnd": "15.255.255"
+    }
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

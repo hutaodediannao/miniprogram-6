@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<navigation-bar title="主页" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<scroll-view class="scrollarea" scroll-y type="list" style="width: 750rpx; height: 929rpx; display: block; box-sizing: border-box; position: relative; left: 1rpx; top: 268rpx">
+  <view class="container" style="width: 750rpx; height: 647rpx; display: flex; box-sizing: border-box; position: relative; left: 0rpx; top: -57rpx">
+
+    <button bind:tap="handle" class="btn">按钮测试</button>
+    <button bind:tap="toTipsPage" class="btn">视图容器</button>
+    <button bind:tap="toScrollPage" class="btn">滑动页面</button>
+
+  </view>
+</scroll-view>

@@ -1,0 +1,7 @@
+<!--pages/scroll/scroll.wxml-->
+<navigation-bar title="滑动页面" background="white"></navigation-bar>
+<view class="scrollPage">
+  <button type="primary">内容按钮1</button>
+  <button type="primary">内容按钮2</button>
+  <button type="primary">内容按钮3</button>
+</view>

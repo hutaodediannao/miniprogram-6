@@ -1,0 +1,17 @@
+/**index.wxss**/
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: seagreen;
+}
+.scrollarea {
+  flex: 1;
+  overflow-y: hidden;
+}
+
+.btn {
+  background-color: springgreen;
+  border-radius: 15rpx;
+  color: whitesmoke;
+}

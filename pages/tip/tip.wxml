@@ -1,0 +1,11 @@
+<scroll-view type="custom" :class="myContainer" scroll-y>
+  <view>阿羡</view>
+  <view>时间段</view>
+  <view>打哈</view>
+  <view>最后一个</view>
+lskflskdjfljs
+  <view>阿羡</view>
+  <view>时间段</view>
+  <view>打哈</view>
+  <view>最后一个</view>
+</scroll-view>
