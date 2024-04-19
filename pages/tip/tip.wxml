@@ -1,11 +1,26 @@
-<scroll-view type="custom" :class="myContainer" scroll-y>
-  <view>阿羡</view>
-  <view>时间段</view>
-  <view>打哈</view>
-  <view>最后一个</view>
-lskflskdjfljs
-  <view>阿羡</view>
-  <view>时间段</view>
-  <view>打哈</view>
-  <view>最后一个</view>
-</scroll-view>
+<!-- <navigation-bar id="navBar" title="视图容器" background="white"><navigation-bar> -->
+<header titleContent="{{title}}" hidden="true" backgroundColor="#ffffff"></header>
+<view class="myContainer" style="height: {{renderHeight}}px;">
+
+  <view class="normal" hover-class="hover" hover-start-time="0" hover-stay-time="0" bind:tap="ck">点击特效</view>
+
+  <view class="customLay" style="width: {{cusWidth}}rpx;">
+    <text>Hello, customLayout</text>
+  </view>
+
+  <button type="primary" bind:tap="updateView">修改View容器大小</button>
+  <button type="primary" bind:tap="getWindowInf">获取屏幕信息</button>
+
+  <!-- 插槽组件的使用 -->
+  <device-card model:ls="{{ls}}" model:dji="{{dji}}" bind:handCompentEvent="pageHandCompentEvent" style="margin-top: 10px; width: 100%;">
+    <view slot="s0" class="so">
+      <text>手机品牌</text>
+      <view class="submit">提交勾选</view>
+    </view>
+    <view slot="s1" class="so">
+      <text>大疆无人机</text>
+      <view class="submit">提交勾选</view>
+    </view>
+  </device-card>
+
+</view>

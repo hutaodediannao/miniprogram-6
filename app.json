@@ -3,15 +3,20 @@
     "pages/index/index",
     "pages/me/me",
     "pages/tip/tip",
-    "pages/scroll/scroll"
+    "pages/scroll/scroll",
+    "pages/api/api",
+    "pages/qrCode/qrCode",
+    "pages/userApi/userApi",
+    "pages/cssPage/cssPage",
+    "pages/miniApp",
+    "pages/app"
   ],
   "window": {
     "navigationStyle": "custom",
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff000",
     "navigationBarTitleText": "666",
-    "navigationBarTextStyle":"black",
-    "enablePullDownRefresh": true
+    "navigationBarTextStyle":"black"
   },
   "style": "v2",
   "renderer": "skyline",

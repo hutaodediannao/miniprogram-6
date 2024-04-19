@@ -5,7 +5,24 @@ Page({
    * 页面的初始数据
    */
   data: {
+    items: [],
+    len: 0,
+    defaultAge: 30
+  },
 
+  /**
+   * 添加新用户
+   * @param {*} v 
+   */
+  add(v) {
+    var person = {
+      name: "erbi",
+      age: this.data.defaultAge + this.data.items.length
+    }
+    var ls = this.data.items
+    ls.push(person)
+    this.setData({items:ls})
+    console.log(this.data)
   },
 
   /**

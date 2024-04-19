@@ -1,4 +1,6 @@
 /**app.wxss**/
+@import '/res/base.wxss';
+
 .container {
   height: 100%;
   display: flex;

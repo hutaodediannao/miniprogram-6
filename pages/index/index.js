@@ -1,5 +1,13 @@
 // index.js
+const common = require('../../manager/common.js')
+
 Page({
+  data: {
+    title: '主页',
+    bgc: 'red',
+    bg: '#ffffff',
+    pageHeight: 0
+  },
   handle() {
     console.log("bindTap ok! 跳转到我的页面")
     wx.navigateTo({
@@ -9,8 +17,11 @@ Page({
 
   toTipsPage() {
     console.log("bingTap ok, 跳转到tips页面")
-    wx.navigateTo({
-      url: '../tip/tip',
+    // wx.navigateTo({
+    //   url: '../tip/tip',
+    // })
+    this.pageRouter.navigateTo({
+      url: '../tip/tip'
     })
   },
 
@@ -18,6 +29,42 @@ Page({
     console.log("进入可滑动页面:" + v)
     wx.navigateTo({
       url: '../scroll/scroll',
+    })
+  },
+
+  viewMeasure(v) {
+    console.log("view计算测试")
+    wx.navigateTo({
+      url: '../api/api',
+    })
+  },
+
+  toQrCode(v) {
+    console.log("qrCode")
+    wx.navigateTo({
+      url: '../qrCode/qrCode',
+    })
+  },
+
+  wxApi(v) {
+    console.log("wxApi")
+    wx.navigateTo({
+      url: '../userApi/userApi',
+    })
+  },
+
+  cssPage(v) {
+    wx.navigateTo({
+      url: '../cssPage/cssPage',
+    })
+  },
+
+  onShow() {
+    console.log("onShow()")
+    const pageContentHeight = common.getPageContentHeight()
+    console.log("pageContentHeight =====> " + pageContentHeight)
+    this.setData({
+      pageHeight: pageContentHeight
     })
   }
 })

@@ -1,7 +1,6 @@
 {
   "usingComponents": {
-    "navigation-bar": "/components/navigation-bar/navigation-bar"
+    "header":"/components/header/header"
   },
-  "enablePullDownRefresh": true,
-  "navigationBarBackgroundColor": "#ff0000"
+  "navigationBarBackgroundColor": "#00ff00"
 }

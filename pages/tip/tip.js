@@ -1,100 +1,88 @@
+const common = require('../../manager/common.js')
 const app = getApp()
 
 Page({
   data: {
-    show: false,
-    duration: 300,
-    position: 'right',
-    round: false,
-    overlay: true,
-    customStyle: '',
-    overlayStyle: ''
+    cusWidth: 300,
+    renderHeight: 0,
+    title: '自定义头部内容',
+    _ls: [{
+        mobile: 'OPPO',
+        checked: false
+      },
+      {
+        mobile: 'NOKIA',
+        checked: false
+      },
+      {
+        mobile: 'XIAOMI',
+        checked: false
+      }
+    ],
+    get ls() {
+      return this._ls
+    },
+    set ls(value) {
+      this._ls = value
+    },
+    dji: ['MAVIC-3PRO', 'AIR-3', 'MINI-4PRO']
   },
-  onLoad: function () {
-    console.log('代码片段是一种迷你、可分享的小程序或小游戏项目，可用于分享小程序和小游戏的开发经验、展示组件和 API 的使用、复现开发问题和 Bug 等。可点击以下链接查看代码片段的详细文档：')
-    console.log('https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/devtools.html')
-
-    
+  onLoad() {
+    console.log("onLoad 开始执行")
   },
   onShow() {
-   
-  },
-
-  popup(e) {
-    const position = e.currentTarget.dataset.position
-    let customStyle = ''
-    let duration = this.data.duration
-    switch(position) {
-      case 'top':
-      case 'bottom': 
-        customStyle = 'height: 30%;'
-        break
-      case 'right':
-        break
-    }
+    console.log("onShow 开始执行")
+    const renderHeight = this.getRenderViewHeight()
     this.setData({
-      position,
-      show: true,
-      customStyle,
-      duration
+      renderHeight: renderHeight
+    })
+  },
+  onReady() {
+    console.log("onReady 开始执行")
+  },
+  onHide() {
+    console.log("onHide 开始执行")
+  },
+  onUnload() {
+    console.log("onUnload 开始执行")
+  },
+  ck(v) {
+    wx.showToast({
+      title: '消息提示',
+      duration: 2000
     })
   },
 
-  changeRound() {
-    this.setData({round: !this.data.round})
+  getWindowInf(v) {
+    const screenHeight = wx.getWindowInfo().screenHeight
+    const screenWidth = wx.getWindowInfo().windowWidth
+    const statusBarHeight = wx.getWindowInfo().statusBarHeight
+    console.log(`screenHeight=${screenHeight}, screenWidth=${screenWidth}, statusBarHeight=${statusBarHeight}`)
   },
 
-  changeOverlay() {
-    this.setData({overlay: !this.data.overlay, show: true})
+  updateView(v) {
+    console.log("updateView====> " + v)
+    this.setData({
+      cusWidth: this.data.cusWidth + 10
+    })
   },
 
-  changeOverlayStyle(e) {
-    let overlayStyle = ''
-    const type = e.currentTarget.dataset.type
-    switch(type) {
-      case 'black':
-        overlayStyle = 'background-color: rgba(0, 0, 0, 0.7)'
-        break
-      case 'white':
-        overlayStyle = 'background-color: rgba(255, 255, 255, 0.7)'
-        break
-      case 'blur':
-        overlayStyle = 'background-color: rgba(0, 0, 0, 0.7); filter: blur(4px);'
-    }
-    this.setData({overlayStyle, show: true})
-
+  getRenderViewHeight(v) {
+    const statusHeight = wx.getWindowInfo().statusBarHeight
+    const windowHeight = wx.getWindowInfo().screenHeight
+    const navHeight = common.getNavHeight()
+    const renderHeight = windowHeight - statusHeight - navHeight
+    console.log("成功获取renderView高度：" + renderHeight)
+    return renderHeight
   },
 
-  exit() {
-    console.log("exit")
-    this.setData({show: false})
-    // wx.navigateBack()
-  },
-
-  goTo(e) {
-    wx.navigateTo({url: `../shareElement/index`})
-  },
-
-  onBeforeEnter(res) {
-    console.log(res)
-  },
-  onEnter(res) {
-    console.log(res)
-  },
-  onAfterEnter(res) {
-    console.log(res)
-  },
-  onBeforeLeave(res) {
-    console.log(res)
-  },
-  onLeave(res) {
-    console.log(res)
-  },
-  onAfterLeave(res) {
-    console.log(res)
-  },
-
-  onClickOverlay(res) {
-    console.log(res)
+  pageHandCompentEvent(v){
+    console.log("tips页面获取到控件传递来的数据")
+    const result = v.detail.index
+    console.log(result)
+    wx.showToast({
+      title: 'ok',
+      duration:2000
+    })
   }
 })

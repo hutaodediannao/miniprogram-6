@@ -1,7 +1,18 @@
 <!--pages/scroll/scroll.wxml-->
-<navigation-bar title="滑动页面" background="white"></navigation-bar>
+<header titleContent="滑动页面" hidden="{{true}}" backgroundColor="#ffffff"></header>
 <view class="scrollPage">
-  <button type="primary">内容按钮1</button>
-  <button type="primary">内容按钮2</button>
-  <button type="primary">内容按钮3</button>
+  <swiper class="swRoot">
+    <view class="sw-group">
+      <button class="swBtn" type="primary">ok</button>
+    </view>
+    <swiper-item class="s1" wx:for="{{items}}" wx:key="{{item}}">
+    {{item.name}} - {{item.age}}
+    </swiper-item>
+  </swiper>
+
+  <button type="primary" bind:tap="add">添加新用户</button>
+
+
+ 
+
 </view>

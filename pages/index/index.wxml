@@ -1,11 +1,15 @@
 <!--index.wxml-->
-<navigation-bar title="主页" back="{{false}}" color="black" background="#FFF"></navigation-bar>
-<scroll-view class="scrollarea" scroll-y type="list" style="width: 750rpx; height: 929rpx; display: block; box-sizing: border-box; position: relative; left: 1rpx; top: 268rpx">
-  <view class="container" style="width: 750rpx; height: 647rpx; display: flex; box-sizing: border-box; position: relative; left: 0rpx; top: -57rpx">
+<header titleContent="{{title}}" hidden="{{false}}" backgroundColor="{{bg}}"></header>
+<scroll-view class="scrollarea" scroll-y type="list" style="width: 100%; height: {{pageHeight}}px;">
 
-    <button bind:tap="handle" class="btn">按钮测试</button>
-    <button bind:tap="toTipsPage" class="btn">视图容器</button>
-    <button bind:tap="toScrollPage" class="btn">滑动页面</button>
+ <view style="margin-top: 50px;">
+    <button type="primary" bind:tap="handle" class="btn">按钮测试</button>
+    <button type="primary"  bind:tap="toTipsPage" class="btn">视图容器</button>
+    <button type="primary" bind:tap="toScrollPage" class="btn">滑动页面</button>
+    <button type="primary" bind:tap="viewMeasure" class="btn">拍照图片预览</button>
+    <button type="primary" bind:tap="toQrCode" class="btn">扫描二维码</button>
+    <button type="primary" bind:tap="wxApi" class="btn">微信个人信息API调用</button>
+    <button type="primary" bind:tap="cssPage" class="btn">微信less样式调试</button>
+ </view>
 
-  </view>
 </scroll-view>

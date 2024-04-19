@@ -1,6 +1,5 @@
 <!--pages/me/me.wxml-->
-<navigation-bar title="我的" back="{{true}}" color="black" background="#FFF"></navigation-bar>
-
+<header titleContent="我的页面" hidden="{{true}}" backgroundColor="#ffffff"></header>
 <view class="scrollarea">
   <image src="https://img2.baidu.com/it/u=193415134,1341240425&fm=253&fmt=auto&app=120&f=JPEG?w=200&h=300" wx:if="{{isShow}}"/>
   <button bind:tap="goBack">我的页面按钮</button>

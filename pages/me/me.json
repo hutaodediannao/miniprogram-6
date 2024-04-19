@@ -1,6 +1,6 @@
 {
   "usingComponents": {
-    "navigation-bar": "/components/navigation-bar/navigation-bar"
+    "header":"/components/header/header"
   },
   "navigationStyle": "custom",
   "enablePullDownRefresh": true,

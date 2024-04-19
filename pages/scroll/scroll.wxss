@@ -10,11 +10,41 @@ page {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-
+  justify-content: flex-start;
 }
 
-button {
+.swRoot{
+  height: 500rpx;
+}
+
+.s0{
+  background-color: red;
+}
+.s1{
+  background-color: blue;
+}
+.s2{
+  background-color: green;
+}
+.s3{
+  background-color: orange;
+}
+.s4{
+  background-color: orchid;
+}
+
+.sw-group{
+  background-color: steelblue;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+}
+
+.swBtn{
   height: 60rpx;
-  border-radius: 20rpx;
+  margin: 0;
 }

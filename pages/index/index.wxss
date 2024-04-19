@@ -3,15 +3,23 @@ page {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: seagreen;
+  background-color: rgb(ff, 00, 00);
 }
 .scrollarea {
   flex: 1;
   overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: gainsboro;
 }
 
 .btn {
-  background-color: springgreen;
+  height: 80rpx;
+  width: 150rpx;
+  background-color: rgb(3, 153, 78);
+  margin-bottom: 20rpx;
   border-radius: 15rpx;
-  color: whitesmoke;
+  color: white;
 }

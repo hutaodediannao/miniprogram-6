@@ -1,5 +1,9 @@
 {
   "usingComponents": {
+    "navigation-bar": "/components/navigation-bar/navigation-bar",
+    "header":"/components/header/header",
+    "device-card":"/components/device-card/device-card"
   },
-  "enablePullDownRefresh": true
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle":"dark"
 }
