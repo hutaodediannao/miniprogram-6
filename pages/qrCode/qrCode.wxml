@@ -1,0 +1,9 @@
+<!--pages/qrCode/qrCode.wxml-->
+<header titleContent="二维码扫描" hidden="{{true}}" backgroundColor="#0afcgb"></header>
+<view style="width: 100%; height: {{pageContentHeight}}px;" class="content">
+
+  <button type="primary" bind:tap="scanCode">二维码扫码</button>
+  <text style="margin-top: 20px;">扫码结果:</text>
+  <text style="margin-top: 20px;">{{res}}</text>
+
+</view>

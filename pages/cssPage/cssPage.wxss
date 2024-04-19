@@ -1,0 +1,12 @@
+/* pages/cssPage/cssPage.wxss */
+.root {
+  background-color: yellowgreen;
+  height: 100px;
+  top: 30px;
+  left: 20px;
+}
+button {
+  background-color: #e418f3;
+  margin-top: 50px;
+}
+/*# sourceMappingURL=cssPage.wxss.map */

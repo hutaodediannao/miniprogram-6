@@ -1,0 +1,11 @@
+{
+	"ios": {
+		"name": "软通读书-IOS"
+	},
+	"android": {
+		"name": "软通读书-Android"
+	},
+	"common": {
+		"name": "软通读书"
+	}
+}

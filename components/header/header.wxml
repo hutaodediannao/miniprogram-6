@@ -1,0 +1,9 @@
+<!--components/header/header.wxml-->
+<view class="header" style="height: {{height}}px; padding-top: {{statusBarHeight}}px; background-color: {{backgroundColor}};">
+  <view style="width: 100px;">
+    <view wx:if="{{hidden}}" class="iconfont icon-back icon-size" bind:tap="_goback">
+    </view>
+  </view>
+  <text>{{titleContent}}</text>
+  <view class="icon-size" style="width: 100px;"></view>
+</view>

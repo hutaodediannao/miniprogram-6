@@ -1,0 +1,19 @@
+<!--components/device-card/device-card.wxml-->
+<view class="card">
+  <view class="sendBtn" bind:tap="send" data-index="{{result}}">{{butnName}}</view>
+  
+  <slot name="s0"></slot>
+
+  <checkbox-group bindchange="change">
+    <checkbox wx:for="{{ls}}" wx:key="{{item}}" value="{{item.mobile}}">{{item.mobile}}</checkbox>
+  </checkbox-group>
+
+  <view style="margin-bottom: 10px;"></view>
+
+  <slot name="s1"></slot>
+
+  <checkbox-group>
+    <checkbox wx:for="{{dji}}" wx:key="item" value="{{item}}">{{item}}</checkbox>
+  </checkbox-group>
+
+</view>

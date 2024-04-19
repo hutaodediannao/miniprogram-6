@@ -1,0 +1,15 @@
+<!--pages/api/api.wxml-->
+<header titleContent="Api测试" hidden="{{true}}" backgroundColor="#0afcgb"></header>
+<view style="width: 100%; height: {{pageContentHeight}}px;"
+class="content">
+
+<camera device-position="back" flash="off" binderror="error" style="width: 200px; height: 200px; border-radius: 100px; border-width: 10px; border-color: red;"></camera>
+
+<button type="primary" bind:tap="takePhoto" style="margin-top: 20px;">拍照</button>
+
+<view>预览</view>
+<image mode="widthFix" src="{{src}}" style="border-radius: 30px;"></image>
+
+
+
+</view>

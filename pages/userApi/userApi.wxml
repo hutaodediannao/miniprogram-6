@@ -1,0 +1,7 @@
+<!--pages/userApi/userApi.wxml-->
+<header titleContent="用户API调用" hidden="{{true}}" backgroundColor="#0afcgb"></header>
+<view style="width: 100%; height: {{pageContentHeight}}px;" class="content">
+
+  <button type="primary" bind:tap="getUser">用户信息调用</button>
+
+</view>

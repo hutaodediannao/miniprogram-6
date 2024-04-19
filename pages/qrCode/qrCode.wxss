@@ -1,0 +1,12 @@
+/* pages/qrCode/qrCode.wxss */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+button{
+  margin-top: 40px;
+}
