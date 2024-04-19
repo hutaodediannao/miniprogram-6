@@ -19,7 +19,33 @@ Page({
         b: 100,
         h() {
             return 100
-        }
+        },
+        ls: [
+            {
+                imgSrc: 'https://t12.baidu.com/it/app=106&f=JPEG&fm=30&fmt=auto&u=1837051489%2C232947512?w=312&h=208&s=BFBA6F81CC32008C60AC41DA0300E093',
+                title: "古力娜扎一袭白色珍珠长裙尽显上围好身材"
+            },
+            {
+                imgSrc: 'https://t10.baidu.com/it/app=106&f=JPEG&fm=30&fmt=auto&u=1991577619%2C232905711?w=312&h=208&s=3C0897576362510DD47DD3F90300402D',
+                title: "娜扎紫粉裙惊艳亮相，初恋般心动如何复制？穿搭秘诀大公..."
+            },
+            {
+                imgSrc: 'https://t10.baidu.com/it/app=106&f=JPEG&fm=30&fmt=auto&u=3307472601%2C232933489?w=312&h=208&s=16A3D705360617515C80FDAD0300F005',
+                title: "古力娜扎蓝色深V流苏长裙绝色佳人"
+            },
+            {
+                imgSrc: 'https://t12.baidu.com/it/app=106&f=JPEG&fm=30&fmt=auto&u=1837051489%2C232947512?w=312&h=208&s=BFBA6F81CC32008C60AC41DA0300E093',
+                title: "古力娜扎一袭白色珍珠长裙尽显上围好身材"
+            },
+            {
+                imgSrc: 'https://t10.baidu.com/it/app=106&f=JPEG&fm=30&fmt=auto&u=1991577619%2C232905711?w=312&h=208&s=3C0897576362510DD47DD3F90300402D',
+                title: "娜扎紫粉裙惊艳亮相，初恋般心动如何复制？穿搭秘诀大公..."
+            },
+            {
+                imgSrc: 'https://t10.baidu.com/it/app=106&f=JPEG&fm=30&fmt=auto&u=3307472601%2C232933489?w=312&h=208&s=16A3D705360617515C80FDAD0300F005',
+                title: "古力娜扎蓝色深V流苏长裙绝色佳人"
+            },
+        ]
     },
 
     jiSuan(v) {

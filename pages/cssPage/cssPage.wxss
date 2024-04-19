@@ -1,12 +1,54 @@
 /* pages/cssPage/cssPage.wxss */
+.flexStyle {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flexVStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
 .root {
   background-color: yellowgreen;
   height: 100px;
-  top: 30px;
-  left: 20px;
+  margin-top: 20px;
 }
-button {
+#btn0 {
   background-color: #e418f3;
-  margin-top: 50px;
+  margin-top: 20px;
+}
+#btn1 {
+  background-color: #3838c2;
+  margin-top: 20px;
+}
+.card {
+  background-color: #fcf7f7;
+  width: 90%;
+  height: 70px;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.card image {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+.card text {
+  color: rgba(0, 0, 0, 0.91);
+  margin-left: 15px;
 }
 /*# sourceMappingURL=cssPage.wxss.map */

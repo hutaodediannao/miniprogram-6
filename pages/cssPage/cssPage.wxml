@@ -2,14 +2,16 @@
 <header titleContent="Less样式接入调试" hidden="{{true}}" backgroundColor="#0afcgb"></header>
 <view style="width: 100%; height: {{pageContentHeight}}px;" class="content">
 
-    <view id="rt" class="root" style="width: {{rootWidth}}px; z-index: 100; ">
+    <view id="rt" class="root" style="width: {{rootWidth}}px; ">
         <text style="margin: 10px;">
             宽度:{{w}}, 高度:{{h()}}
         </text>
     </view>
-    <button bind:tap="jiSuan" style="z-index: 0;">计算控件属性</button>
+    <button id="btn0" bind:tap="jiSuan">计算控件属性</button>
+    <button id="btn1" bind:tap="test">动态设置布局大小</button>
 
-    <button bind:tap="test">动态设置布局大小</button>
-
-
+    <view class="card" wx:for="{{ls}}" wx:key="{{item}}">
+        <image src="{{item.imgSrc}}"></image>
+        <text>{{item.title}}</text>
+    </view>
 </view>

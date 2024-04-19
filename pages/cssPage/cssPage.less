@@ -1,14 +1,43 @@
 /* pages/cssPage/cssPage.wxss */
 @import url(../../res/common.less);
 
+.content{
+  .flexVStyle;
+}
+
 .root {
   background-color: yellowgreen;
   height: 100px;
-  top: 30px;
-  left: 20px;
+  margin-top: 20px;
 }
 
-button{
+#btn0 {
   background-color: @bgColor;
-  margin-top: @marginTop;
+  margin-top: 20px;
+}
+
+#btn1 {
+  background-color: @bgBlueColor;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: @cardColor;
+  width: @card-width;
+  height: @card-height;
+  border-radius: @radius;
+  margin-top: 20px;
+  .flexStyle;
+
+  image {
+    width: @img-width;
+    height: @img-height;
+    border-radius: @img-border-radius;
+    margin-left: 15px;
+  }
+
+  text {
+    color: rgba(0, 0, 0, 0.91);
+    margin-left: 15px;
+  }
 }
