@@ -2,6 +2,12 @@
 const common = require('../../manager/common')
 
 Page({
+    showTips(v) {
+        wx.showModal({
+            title: '傻屌提示',
+            content: '鸡拔大而且粗长的人点击这个按钮才会弹出来哦, 哈哈哈哈哈。'
+        })
+    },
     test(v) {
         wx.showToast({
             title: 'ok',

@@ -9,6 +9,7 @@
     </view>
     <button id="btn0" bind:tap="jiSuan">计算控件属性</button>
     <button id="btn1" bind:tap="test">动态设置布局大小</button>
+    <button id="btn1" bind:tap="showTips">弹窗提示</button>
 
     <view class="card" wx:for="{{ls}}" wx:key="{{item}}">
         <image src="{{item.imgSrc}}"></image>

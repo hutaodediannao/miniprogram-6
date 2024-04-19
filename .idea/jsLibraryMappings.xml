@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$" libraries="{miniprogram-6/node_modules}" />
+    <file url="PROJECT" libraries="{@types/wechat-miniprogram, miniprogram-6/node_modules, vue}" />
+    <includedPredefinedLibrary name="HTTP Pre-Request and Response Handler" />
     <includedPredefinedLibrary name="Node.js Core" />
-    <excludedPredefinedLibrary name="wechat-mini-program-api" />
+    <includedPredefinedLibrary name="qq-mini-program-api" />
   </component>
 </project>
