@@ -1,0 +1,27 @@
+.flexStyle {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flexVStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-items: flex-start;
+  background-color: darkgrey;
+}
+.root text {
+  margin: 20rpx;
+}
+.root button {
+  margin: 30rpx;
+}
+/*# sourceMappingURL=mathPage.wxss.map */

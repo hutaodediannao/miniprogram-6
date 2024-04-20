@@ -1,0 +1,30 @@
+.flexStyle {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flexVStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-items: flex-start;
+  padding: 20rpx;
+  background-color: #8a8888;
+}
+.content text {
+  margin-top: 20rpx;
+}
+.content button {
+  margin-top: 50rpx;
+  background-color: darkorange;
+  color: white;
+}
+/*# sourceMappingURL=myPage.wxss.map */

@@ -8,8 +8,8 @@
     "pages/qrCode/qrCode",
     "pages/userApi/userApi",
     "pages/cssPage/cssPage",
-    "pages/miniApp",
-    "pages/app"
+    "pages/myPage/myPage",
+    "pages/mathPage/mathPage"
   ],
   "window": {
     "navigationStyle": "custom",

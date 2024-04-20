@@ -1,0 +1,10 @@
+<header titleContent="{{params.title}}" backgroundColor="#ff0000" hidden="true"></header>
+<view class="content" style='height:{{getPageContentHeight}}px;'>
+    <text>获取上一个页面传递的参数: {{params.p0}}+{{params.p1}} = {{params.p0 + params.p1}}</text>
+
+
+    <text wx:if="{{result}}">获取数据成功: {{par.k0}} + {{par.k1}} = {{result}}</text>
+    <button bind:tap="getPageCallback">开始跳转页面获取结果(参数:{{par.k0}} + {{par.k1}} = ?)</button>
+
+
+</view>

@@ -20,3 +20,4 @@ function getPageContentHeight(){
 
 module.exports.getNavHeight = getNavHeight
 module.exports.getPageContentHeight = getPageContentHeight
+module.exports.statusBarHeight = wx.getWindowInfo().statusBarHeight

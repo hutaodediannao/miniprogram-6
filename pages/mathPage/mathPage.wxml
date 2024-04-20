@@ -1,0 +1,8 @@
+<header hidden="{{true}}" titleContent="计算页面" backgroundColor="#00ff00"></header>
+<view style="height:{{height}}px;" class="root">
+
+    <text>参数1: {{par.k0}}</text>
+    <text>参数2: {{par.k1}}</text>
+    <button type="primary" bind:tap="handleMathResult">计算结果并返回给上一个页面</button>
+
+</view>
