@@ -1,0 +1,27 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 30rpx;
+}
+.content view {
+  background-color: burlywood;
+  width: 60%;
+  height: 160rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 40rpx;
+}
+.content view text {
+  color: green;
+  text-align: center;
+  fontsize: 18rpx;
+}
+.content button {
+  margin-top: 25rpx;
+}
+/*# sourceMappingURL=dataStore.wxss.map */
