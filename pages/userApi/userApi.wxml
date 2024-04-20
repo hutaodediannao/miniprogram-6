@@ -2,6 +2,16 @@
 <header titleContent="用户API调用" hidden="{{true}}" backgroundColor="#0afcgb"></header>
 <view style="width: 100%; height: {{pageContentHeight}}px;" class="content">
 
-  <button type="primary" bind:tap="getUser">用户信息调用</button>
+    <image src="{{avatar}}"></image>
+
+    <button type="primary" bind:chooseavatar="chooseavatar" open-type="chooseAvatar">图像选择</button>
+
+    <view>
+        <text>昵称</text>
+        <input type="nickname" placeholder="请输入昵称"/>
+    </view>
+
+    <button type="primary" bind:getphonenumber="getMyPhoneNumber" open-type="getPhoneNumber">手机号码快速验证</button>
+    <button type="primary" bind:tap="verifyFinger">指纹识别认证测试</button>
 
 </view>

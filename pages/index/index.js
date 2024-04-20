@@ -2,6 +2,11 @@
 const common = require('../../manager/common.js')
 
 Page({
+    toDataPage() {
+        wx.navigateTo({
+            url: '../dataStore/dataStore'
+        })
+    },
     toMyPage() {
         let jsonParam = JSON.stringify(this.data.params)
         wx.navigateTo({
@@ -13,10 +18,10 @@ Page({
         bgc: 'red',
         bg: '#ffffff',
         pageHeight: 0,
-        params:{
+        params: {
             p0: 3,
             p1: 5,
-            title:'标题头参数'
+            title: '标题头参数'
         }
     },
     handle() {

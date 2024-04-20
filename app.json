@@ -9,7 +9,8 @@
     "pages/userApi/userApi",
     "pages/cssPage/cssPage",
     "pages/myPage/myPage",
-    "pages/mathPage/mathPage"
+    "pages/mathPage/mathPage",
+    "pages/dataStore/dataStore"
   ],
   "window": {
     "navigationStyle": "custom",

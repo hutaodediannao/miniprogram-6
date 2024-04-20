@@ -1,0 +1,12 @@
+<header titleContent="数据保存读取" hidden="{{true}}" backgroundColor="#0afcgb"></header>
+<view style="width: 100%; height: {{pageContentHeight}}px;" class="content">
+
+    <view>
+        <text>实时数据:</text>
+        <text>{{result}}</text>
+    </view>
+    <button type="primary" bind:tap="add">增加一条数据</button>
+    <button type="primary" bind:tap="del">删除一条数据</button>
+    <button type="primary" bind:tap="upd">修改一条数据</button>
+    <button type="primary" bind:tap="que">查询一条数据</button>
+</view>

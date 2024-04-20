@@ -11,6 +11,7 @@
     <button type="primary" bind:tap="wxApi" class="btn">微信个人信息API调用</button>
     <button type="primary" bind:tap="cssPage" class="btn">微信less样式调试</button>
     <button type="primary" bind:tap="toMyPage" class="btn" data-kp="{{params}}">页面参数传递(计算:3+5)</button>
+     <button type="primary" bind:tap="toDataPage" class="btn">数据保存读取操作</button>
  </view>
 
 </scroll-view>
