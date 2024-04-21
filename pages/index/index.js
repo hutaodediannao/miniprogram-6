@@ -2,9 +2,20 @@
 const common = require('../../manager/common.js')
 
 Page({
+    toSwitchTabPage() {
+        wx.switchTab({
+            url: '../tbHome/tbHome',
+            success(res) {
+                console.log(res)
+            }
+        })
+    },
     toDataPage() {
         wx.navigateTo({
-            url: '../dataStore/dataStore'
+            url: '../dataStore/dataStore',
+            success(res) {
+                console.log(res)
+            }
         })
     },
     toMyPage() {

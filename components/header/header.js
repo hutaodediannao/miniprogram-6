@@ -16,6 +16,10 @@ Component({
     backgroundColor:{
       type: String,
       value: '#000000'
+    },
+    titleColor:{
+      type: String,
+      value: '#000000'
     }
   },
 

@@ -4,6 +4,6 @@
     <view wx:if="{{hidden}}" class="iconfont icon-back icon-size" bind:tap="_goback">
     </view>
   </view>
-  <text>{{titleContent}}</text>
+  <text style="color:{{titleColor}};">{{titleContent}}</text>
   <view class="icon-size" style="width: 100px;"></view>
 </view>
