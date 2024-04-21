@@ -27,13 +27,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  align-items: flex-start;
-  background-color: darkgrey;
+  justify-content: flex-end;
+  background-color: burlywood;
 }
-.root text {
-  margin: 20rpx;
-}
-.root button {
-  margin: 30rpx;
-}
-/*# sourceMappingURL=mathPage.wxss.map */
+/*# sourceMappingURL=customTab.wxss.map */

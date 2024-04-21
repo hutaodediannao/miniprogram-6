@@ -2,6 +2,12 @@
 const common = require('../../manager/common.js')
 
 Page({
+    toSwitchCustomTabPage() {
+        wx.navigateTo({
+            url: '../customTab/customTab',
+        })
+
+    },
     toSwitchTabPage() {
         wx.switchTab({
             url: '../tbHome/tbHome',

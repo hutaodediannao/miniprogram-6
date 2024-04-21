@@ -1,0 +1,7 @@
+<header titleColor="white" hidden="{{true}}" backgroundColor="#ff0000" titleContent="首页"></header>
+<view style="height:{{height}}px;" class="root">
+
+    <tab style="width:100%;"></tab>
+
+
+</view>

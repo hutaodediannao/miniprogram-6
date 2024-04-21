@@ -22,18 +22,27 @@
   justify-content: center;
   align-items: center;
 }
-.root {
+view {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fa4f4f;
+  height: 60px;
+  width: 100%;
+}
+view view {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  align-items: flex-start;
-  background-color: darkgrey;
+  width: 100%/3;
 }
-.root text {
-  margin: 20rpx;
+view view image {
+  width: 30px;
+  height: 30px;
 }
-.root button {
-  margin: 30rpx;
+view view text {
+  color: rgba(24, 23, 23, 0.91);
 }
-/*# sourceMappingURL=mathPage.wxss.map */
+/*# sourceMappingURL=tab.wxss.map */

@@ -13,7 +13,8 @@
     "pages/dataStore/dataStore",
     "pages/tbHome/tbHome",
     "pages/tbScene/tbScene",
-    "pages/tbMe/tbMe"
+    "pages/tbMe/tbMe",
+    "pages/customTab/customTab"
   ],
   "tabBar": {
     "backgroundColor": "#ff0000",
