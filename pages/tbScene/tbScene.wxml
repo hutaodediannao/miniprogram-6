@@ -1,0 +1,6 @@
+<!--pages/tbScene/tbScene.wxml-->
+<header titleContent="场景" backgroundColor="#F37F20FF" hidden="{{false}}" titleColor="#ffffff"></header>
+<view class="root">
+
+
+</view>
