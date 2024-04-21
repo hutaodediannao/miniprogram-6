@@ -1,0 +1,6 @@
+<!--pages/tbMe/tbMe.wxml-->
+<header titleContent="我的" backgroundColor="#6062FFFF" hidden="{{false}}" titleColor="#ffffff"></header>
+<view class="root">
+
+
+</view>

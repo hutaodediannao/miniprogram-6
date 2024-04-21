@@ -1,0 +1,6 @@
+<!--pages/tbHome/tbHome.wxml-->
+<header titleContent="主页" backgroundColor="#F31E1E" hidden="{{false}}" titleColor="#ffffff"></header>
+<view class="root">
+
+
+</view>
