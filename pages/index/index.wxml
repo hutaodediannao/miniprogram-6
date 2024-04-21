@@ -14,5 +14,5 @@
      <button type="primary" bind:tap="toDataPage" class="btn">数据保存读取操作</button>
      <button type="primary" bind:tap="toSwitchTabPage" class="btn">跳转到Tab选择页</button>
  </view>
-
+s
 </scroll-view>
