@@ -2,6 +2,31 @@
 const common = require('../../manager/common.js')
 
 Page({
+    timeEvent() {
+        wx.navigateTo({
+            url: '../timePage/timePage',
+            success(res) {
+                console.log(res)
+            }
+        })
+
+    }, workThread() {
+        wx.navigateTo({
+            url: '../workPage/workPage'
+        })
+    },
+
+    filePage() {
+        wx.navigateTo({
+            url: '../fileHandle/fileHandle'
+        })
+    },
+    toSwitchCustomTabPage() {
+        wx.navigateTo({
+            url: '../customTab/customTab',
+        })
+
+    },
     toSwitchTabPage() {
         wx.switchTab({
             url: '../tbHome/tbHome',

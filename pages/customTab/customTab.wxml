@@ -1,0 +1,5 @@
+<header titleColor="white" hidden="{{true}}" backgroundColor="#ff0000" titleContent="{{tabItem.text}}"></header>
+<view style="height:{{height}}px;" class="root">
+    <view class="content" style="background-color:{{bg(tabItem)}};"></view>
+    <tab style="width:100%;" bind:meEvent="callbackEvent" arr="{{arr}}"></tab>
+</view>

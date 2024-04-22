@@ -1,0 +1,16 @@
+<header titleContent="文件系统操作" titleColor="white" hidden="{{true}}" backgroundColor="green"></header>
+<view style="width: 100%; height: {{pageContentHeight}}px;" class="content">
+
+    <view wx:for="{{tempFilePaths}}" wx:key="item">
+        <text>{{item}}</text>
+    </view>
+    <button type="primary" bind:tap="f1">chooseImage调用测试</button>
+    <text wx:if="{{tempFilePath}}">保存临时文件成功:{{tempFilePath}}</text>
+    <button type="primary" bind:tap="f2">saveFile保存临时文件</button>
+    <image src="{{fileList[0].filePath}}"></image>
+    <button type="primary" bind:tap="f3">获取本地保存的临时文件</button>
+    <button type="primary" bind:tap="f4">写文件字符串到小程序的私有目录</button>
+    <button type="primary" bind:tap="f5">读取小程序的私有目录的字符串文件</button>
+
+
+</view>

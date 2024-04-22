@@ -13,7 +13,11 @@
     "pages/dataStore/dataStore",
     "pages/tbHome/tbHome",
     "pages/tbScene/tbScene",
-    "pages/tbMe/tbMe"
+    "pages/tbMe/tbMe",
+    "pages/customTab/customTab",
+    "pages/fileHandle/fileHandle",
+    "pages/workPage/workPage",
+    "pages/timePage/timePage"
   ],
   "tabBar": {
     "backgroundColor": "#ff0000",
@@ -61,5 +65,10 @@
   },
   "componentFramework": "glass-easel",
   "sitemapLocation": "sitemap.json",
-  "lazyCodeLoading": "requiredComponents"
+  "lazyCodeLoading": "requiredComponents",
+  "workers": {
+    "path": "workers",
+    "isSubpackage": true
+  },
+  "darkmode": true
 }

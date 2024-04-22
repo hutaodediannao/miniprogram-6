@@ -1,0 +1,9 @@
+<header titleContent="定时器操作相关" titleColor="black" hidden="{{true}}" backgroundColor="#FCF7F7"></header>
+<view style="width: 100%; height: {{pageContentHeight}}px;" class="content">
+
+    <button type="primary" bind:tap="setTimeEvent">定时函数</button>
+    <button type="primary" bind:tap="clearTimeEvent">取消定时函数</button>
+    <button type="primary" bind:tap="timeInterval">周期定时函数</button>
+    <button type="primary" bind:tap="clearTimeInterval">取消周期定时函数</button>
+
+</view>

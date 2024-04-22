@@ -1,0 +1,10 @@
+<header titleContent="异步线程操作" titleColor="white" hidden="{{true}}" backgroundColor="#F69C52FF"></header>
+<view style="width: 100%; height: {{pageContentHeight}}px;" class="content">
+
+<button type="primary" bind:tap="createWorker">创建worker线程</button>
+<button type="primary" bind:tap="sendMsg">主线程向 Worker 发送消息</button>
+<button type="primary" bind:tap="recycleWorker">销毁worker</button>
+
+
+
+</view>
