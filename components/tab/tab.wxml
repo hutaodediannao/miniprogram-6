@@ -1,7 +1,7 @@
 <view>
     <view wx:for="{{arr}}" wx:key="index" bind:tap="itemClick" data-item="{{index}}">
-        <image wx:if="{{item.selected}}" src="{{item.selectIcon}}"></image>
+        <image wx:if="{{item.selected === true}}" src="{{item.selectIcon}}"></image>
         <image wx:else src="{{item.icon}}"></image>
-        <text style="color:{{item.getTextColor()}};">{{item.text}}</text>
+        <text style="color:{{item.textColor(item.selected)}};">{{item.text}}</text>
     </view>
 </view>
