@@ -2,6 +2,12 @@
 const common = require('../../manager/common.js')
 
 Page({
+    workThread() {
+        wx.navigateTo({
+            url: '../workPage/workPage'
+        })
+    },
+
     filePage() {
         wx.navigateTo({
             url: '../fileHandle/fileHandle'
