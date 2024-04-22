@@ -2,6 +2,11 @@
 const common = require('../../manager/common.js')
 
 Page({
+    filePage() {
+        wx.navigateTo({
+            url: '../fileHandle/fileHandle'
+        })
+    },
     toSwitchCustomTabPage() {
         wx.navigateTo({
             url: '../customTab/customTab',
