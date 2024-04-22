@@ -2,7 +2,15 @@
 const common = require('../../manager/common.js')
 
 Page({
-    workThread() {
+    timeEvent() {
+        wx.navigateTo({
+            url: '../timePage/timePage',
+            success(res) {
+                console.log(res)
+            }
+        })
+
+    }, workThread() {
         wx.navigateTo({
             url: '../workPage/workPage'
         })

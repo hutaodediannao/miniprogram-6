@@ -3,6 +3,7 @@
 <scroll-view class="scrollarea" scroll-y type="list" style="width: 100%; height: {{pageHeight}}px;">
 
  <view style="margin-top: 50px;">
+    <button type="primary" bind:tap="timeEvent" class="btn">定时器操作</button>
     <button type="primary" bind:tap="workThread" class="btn">异步线程操作</button>
     <button type="primary" bind:tap="filePage" class="btn">文件系统操作</button>
     <button type="primary" bind:tap="handle" class="btn">按钮测试</button>

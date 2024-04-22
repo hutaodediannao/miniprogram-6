@@ -16,7 +16,8 @@
     "pages/tbMe/tbMe",
     "pages/customTab/customTab",
     "pages/fileHandle/fileHandle",
-    "pages/workPage/workPage"
+    "pages/workPage/workPage",
+    "pages/timePage/timePage"
   ],
   "tabBar": {
     "backgroundColor": "#ff0000",
@@ -68,5 +69,6 @@
   "workers": {
     "path": "workers",
     "isSubpackage": true
-  }
+  },
+  "darkmode": true
 }
