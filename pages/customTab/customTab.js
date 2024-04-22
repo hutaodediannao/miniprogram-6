@@ -3,6 +3,47 @@ import {getPageContentHeight} from "../../manager/common";
 Page({
     data: {
         height: getPageContentHeight(),
+        arr: [
+            {
+                icon: '../../img/home.png',
+                selectIcon: "../../img/homeS.png",
+                text: '主页',
+                selected: true,
+                textColor(isSelected) {
+                    console.log("getTextColor", isSelected)
+                    if (isSelected)
+                        return '#ffffff'
+                    else
+                        return '#000000'
+                }
+            },
+            {
+                icon: '../../img/scene.png',
+                selectIcon: "../../img/sceneS.png",
+                text: '场景',
+                selected: false,
+                textColor(isSelected) {
+                    console.log("getTextColor", isSelected)
+                    if (isSelected)
+                        return '#ffffff'
+                    else
+                        return '#000000'
+                }
+            },
+            {
+                icon: '../../img/me.png',
+                selectIcon: "../../img/meS.png",
+                text: '我的',
+                selected: false,
+                textColor(isSelected) {
+                    console.log("getTextColor", isSelected)
+                    if (isSelected)
+                        return '#ffffff'
+                    else
+                        return '#000000'
+                }
+            }
+        ],
         tabItem: null,
         bg(item) {
             console.log('bg item===========> ', item)

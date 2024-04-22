@@ -1,49 +1,11 @@
 Component({
-    properties: {},
-    data: {
-        arr: [
-            {
-                icon: '../../img/home.png',
-                selectIcon: "../../img/homeS.png",
-                text: '主页',
-                selected: true,
-                textColor(isSelected) {
-                    console.log("getTextColor", isSelected)
-                    if (isSelected)
-                        return '#ffffff'
-                    else
-                        return '#000000'
-                }
-            },
-            {
-                icon: '../../img/scene.png',
-                selectIcon: "../../img/sceneS.png",
-                text: '场景',
-                selected: false,
-                textColor(isSelected) {
-                    console.log("getTextColor", isSelected)
-                    if (isSelected)
-                        return '#ffffff'
-                    else
-                        return '#000000'
-                }
-            },
-            {
-                icon: '../../img/me.png',
-                selectIcon: "../../img/meS.png",
-                text: '我的',
-                selected: false,
-                textColor(isSelected) {
-                    console.log("getTextColor", isSelected)
-                    if (isSelected)
-                        return '#ffffff'
-                    else
-                        return '#000000'
-                }
-            }
-        ]
-
+    properties: {
+        arr: {
+            type: Array,
+            value: []
+        }
     },
+    data: {},
     methods: {
         itemClick(e) {
             let item = e.currentTarget.dataset.item
