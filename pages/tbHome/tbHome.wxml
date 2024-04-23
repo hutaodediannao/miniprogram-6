@@ -2,5 +2,8 @@
 <header titleContent="主页" backgroundColor="#F31E1E" hidden="{{false}}" titleColor="#ffffff"></header>
 <view class="root">
 
+    <view wx:for="{{ls}}" wx:key="{{item}}">
+        <text>{{item}}</text>
+    </view>
 
 </view>

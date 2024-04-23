@@ -18,5 +18,5 @@
      <button type="primary" bind:tap="toSwitchTabPage" class="btn">跳转到Tab选择页</button>
      <button type="primary" bind:tap="toSwitchCustomTabPage" class="btn">自定义Tab选择页</button>
  </view>
-
+s
 </scroll-view>

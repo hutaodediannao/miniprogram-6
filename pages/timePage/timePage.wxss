@@ -1,0 +1,41 @@
+.flexStyle {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flexHStyle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.flexVStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flexCStyle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.content text {
+  margin-top: 20rpx;
+  color: red;
+}
+.content button {
+  width: 60%;
+  margin-top: 20rpx;
+  background-color: darkorange;
+}
+/*# sourceMappingURL=timePage.wxss.map */
